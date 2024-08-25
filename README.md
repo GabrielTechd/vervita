@@ -10,10 +10,9 @@ VirVite é um projeto de estudo desenvolvido com Next.js, Tailwind CSS, JavaScri
 - **CSS**: Folhas de estilo para design e layout customizado.
 - **HTML**: Linguagem de marcação para estruturação de conteúdo web.
 
-## Funcionalidades
-
-- **Navbar Completa**: Navegação intuitiva e responsiva para uma melhor experiência do usuário.
-- **Página Inicial**: Design e layout iniciais prontos, com elementos místicos e estilos de loja.
+## Confira o projeto online:
+      ```bash
+      https://vervita.vercel.app
 
 ## Instalação
 
