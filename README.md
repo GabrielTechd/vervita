@@ -11,7 +11,6 @@ VirVite é um projeto de estudo desenvolvido com Next.js, Tailwind CSS, JavaScri
 - **HTML**: Linguagem de marcação para estruturação de conteúdo web.
 
 ## Confira o projeto online:
-      ```bash
       https://vervita.vercel.app
 
 ## Instalação
