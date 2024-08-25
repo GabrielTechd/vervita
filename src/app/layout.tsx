@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
 import { Poppins } from "next/font/google";
-import Header  from "../components/header/Header"; // Corrigido o nome do componente
+import Header from "../components/header/Header"; // Corrigido o nome do componente
 import "./globals.css";
 import Anuncio from "@/components/anuncio/anuncio";
+import Footer from "@/components/footer/footer";
 
 // Carregamento da fonte
 const poppins = Poppins({
@@ -29,9 +30,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="pt-BR">
       <body className={poppins.className}>
         <main>
-        <Header /> {/* Renderização correta do componente Header */}
-        <Anuncio />
+          <Header /> {/* Renderização correta do componente Header */}
+          <Anuncio />
           {children}
+          <Footer />
         </main>
       </body>
     </html>

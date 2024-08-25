@@ -1,14 +1,14 @@
 /** @format */
 "use client";
 
-import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import clsx from "clsx";
 import { FiMenu } from "react-icons/fi";
 import { FaUser, FaShoppingCart } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
 import Image from "next/image";
-import { usePathname } from 'next/navigation';  // Utilize usePathname em vez de useRouter
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isSideMenuOpen, setMenu] = useState(false);
@@ -48,15 +48,15 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        "fixed top-0 w-full z-50 transition-transform duration-300 bg-white shadow-md",
+        "fixed top-0 w-full z-50 transition-transform duration-300 bg-background shadow-md",
         !isVisible && "-translate-y-full"
       )}
     >
       <nav className="flex items-center justify-between py-4 px-6 md:px-10">
         {/* Logo */}
-        <Link href={"/"} className="flex items-center text-2xl font-bold">
+        <Link href="/" className="flex items-center text-2xl font-bold">
+          <h1 className="mr-2 text-texto">Vervita </h1>
           <Image src="/logo.png" alt="logo" width={45} height={45} />
-          <h1 className="ml-2">Vervita.</h1>
         </Link>
 
         {/* Navegação Centralizada */}
@@ -66,8 +66,10 @@ export default function Header() {
               key={i}
               href={d.link}
               className={clsx(
-                "text-lg font-medium text-gray-700 transition-colors duration-300",
-                pathname === d.link ? "text-primaria" : "hover:text-primaria"
+                "text-lg font-medium",
+                pathname === d.link
+                  ? "text-primaria"  // Ajuste a cor ativa aqui
+                  : "text-texto hover:text-primaria transition-colors duration-300"
               )}
             >
               {d.label}
@@ -77,10 +79,10 @@ export default function Header() {
 
         {/* Ícones de Perfil e Carrinho */}
         <div className="hidden lg:flex items-center gap-4">
-          <Link href="/perfil" className="text-2xl text-gray-700 hover:text-gray-900 transition-colors duration-300">
+          <Link href="/perfil" className="text-2xl text-texto hover:text-primaria transition-colors duration-300">
             <FaUser />
           </Link>
-          <Link href="/carrinho" className="text-2xl text-gray-700 hover:text-gray-900 transition-colors duration-300">
+          <Link href="/carrinho" className="text-2xl text-texto hover:text-primaria transition-colors duration-300">
             <FaShoppingCart />
           </Link>
         </div>
@@ -89,7 +91,7 @@ export default function Header() {
         <div className="lg:hidden flex items-center ml-auto">
           <FiMenu
             onClick={() => setMenu(true)}
-            className="text-3xl cursor-pointer text-gray-700"
+            className="text-3xl cursor-pointer text-texto"
           />
         </div>
 
@@ -114,7 +116,9 @@ export default function Header() {
                 href={d.link}
                 className={clsx(
                   "text-lg font-bold py-2",
-                  pathname === d.link ? "text-primaria" : "hover:text-gray-300"
+                  pathname === d.link
+                    ? "text-primaria"
+                    : "text-texto hover:text-gray-300"
                 )}
                 onClick={() => setMenu(false)}
               >

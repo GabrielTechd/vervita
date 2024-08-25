@@ -33,7 +33,7 @@ const Home = () => {
         {/* Seção Central com Texto */}
         <div className="flex-1 flex items-center text-center justify-center p-4">
           <div className="bg-opacity-60 text-white p-6 rounded-lg shadow-lg max-w-full md:max-w-max">
-            <h1 className="text-3xl md:text-5xl mb-4 text-center -tracking-tighter">VERVITE</h1>
+            <h1 className="text-3xl md:text-5xl mb-4 text-center -tracking-tighter">Vervita</h1>
             <p className='text-base mb-6 md:text-lg'>
               O despertar da sua energia mística
             </p>
