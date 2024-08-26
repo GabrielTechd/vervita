@@ -34,9 +34,9 @@ const products: Product[] = [
     rating: 4.6,
     available: true, // Disponível
     images: [
-      "/produtos/ColarDeAmetista/ColarDeAmetista1.jpeg",
-      "/produtos/ColarDeAmetista/ColarDeAmetista2.jpeg",
-      "/produtos/ColarDeAmetista/ColarDeAmetista3.jpeg",
+      "/produtos/ColarDeAmetista/ColardeAmetista1.jpeg",
+      "/produtos/ColarDeAmetista/ColardeAmetista2.jpeg",
+      "/produtos/ColarDeAmetista/ColardeAmetista3.jpeg",
 
     ]
   },
