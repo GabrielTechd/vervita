@@ -4,6 +4,8 @@ import Header from "../components/header/Header"; // Corrigido o nome do compone
 import "./globals.css";
 import Anuncio from "@/components/anuncio/anuncio";
 import Footer from "@/components/footer/footer";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 // Carregamento da fonte
 const poppins = Poppins({
